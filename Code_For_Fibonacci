@@ -1,0 +1,15 @@
+terms=int(input("enter how many terms:"))
+a,b=0,1 
+count=0
+if terms<=0:
+    print("please enter a positive integer:")
+elif terms==1:
+    print("fibonnaci series upto",terms,"is",a)
+else:
+    print("the sequence is:")
+    while count<terms:
+        print(a," ", end='')
+        n=a+b 
+        a=b
+        b=n 
+        count+=1
